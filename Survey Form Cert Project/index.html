@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Generic Survey</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="freeCodeCamp Survey Form Certification Project" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Generic Survey</h1>
+  <p id="description">Thank you for taking the time to take this generic survey</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name <input id="name" type="text" placeholder="John Doe" required /></label>
+      <label id="email-label">Email <input id="email" type="email" placeholder="johndoe@email.com" required /></label>
+      <label id="number-label">Number <input id="number" type="number" placeholder="Enter the correct number" min="42" max="42" /></label>
+    </fieldset>
+
+    <fieldset>
+      <label>How do you prefer to interact with people?
+        <select id="dropdown">
+          <option>In person</option>
+          <option>On the internet</option>
+        </select>
+      </label>
+      
+      <label><input type="radio" name="radio" value="yes-chocolate-ice-cream" /> I like chocolate ice cream</label>
+      <label><input type="radio" name="radio" value="no-chocolate-ice-cream" /> I do not like chocolate ice cream</label>
+
+      <label><input type="checkbox" value="html" />HTML</label>
+      <label><input type="checkbox" value="css" />CSS</label>
+      <label><input type="checkbox" value="c" />C</label>
+      <label><input type="checkbox" value="python" />Python</label>
+      <label><input type="checkbox" value="php" />PHP</label>
+      <label>Do you have any additional comments?
+        <textarea placeholder="I like cake..."></textarea>
+      </label>
+    </fieldset>
+    <input id="submit" type="submit" />
+  </form>
+</body>
+</html>
